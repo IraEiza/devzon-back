@@ -85,10 +85,10 @@ npm run build
 
 | METHOD | ENDPOINT            | TOKEN | ROLE  | DESCRIPTION               | POST PARAMS                                   | QUERY PARAMS                      | RETURNS                        |
 |--------|---------------------|-------|-------|---------------------------|-----------------------------------------------|----------------------------------|--------------------------------|
-| GET    | /products           | Yes   | -     | Get all products          | -                                             | `name`, `minPrice`, `maxPrice`   | [{product1}, {product2}, ...]  |
-| GET    | /products/:productId| Yes   | -     | Get a single product      | -                                             | -                                | {product}                      |
-| POST   | /products           | Yes   | Admin | Create a new product      | `name`, `price`, `description`, `image`       | -                                | {product}                      |
-| PUT    | /products/:productId| Yes   | Admin | Update an existing product| `name`, `price`, `description`, `image`       | -                                | {product}                      |
-| DELETE | /products/:productId| Yes   | Admin | Delete a product          | -                                             | -                                | {product}                      |
+| GET    | /products           | Yes   | -     | Get all products          | -                                             | `name`, `minPrice`, `maxPrice`   | `[{product1}, {product2}, ...]`  |
+| GET    | /products/:productId| Yes   | -     | Get a single product      | -                                             | -                                | `{product}`                      |
+| POST   | /products           | Yes   | Admin | Create a new product      | `name`, `price`, `description`, `image`       | -                                | `{product}`                      |
+| PUT    | /products/:productId| Yes   | Admin | Update an existing product| `name`, `price`, `description`, `image`       | -                                | `{product}`                      |
+| DELETE | /products/:productId| Yes   | Admin | Delete a product          | -                                             | -                                | `{product}`                      |
 
 
