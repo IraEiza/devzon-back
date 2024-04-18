@@ -92,3 +92,11 @@ npm run build
 | DELETE | /products/:productId| Yes   | Admin | Delete a product          | -                                             | -                                | `{product}`                      |
 
 
+## Purchase Routes
+
+| METHOD | ENDPOINT  | TOKEN | ROLE  | DESCRIPTION               | POST PARAMS                           | QUERY PARAMS  | RETURNS                          |
+|--------|-----------|-------|-------|---------------------------|---------------------------------------|---------------|----------------------------------|
+| GET    | /purchases| Yes   | Admin | Get all purchases         | -                                     | -             | `[{purchase1}, {purchase2}, ...]`|
+| GET    | /purchases/own| Yes| -     | Get current user's purchases | -                                   | -             | `[{purchase1}, {purchase2}, ...]`|
+| POST   | /purchases| Yes   | -     | Create a new purchase     | `productIds` | -       | `{purchase}`                    |
+

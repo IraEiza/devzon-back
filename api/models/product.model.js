@@ -14,7 +14,7 @@ const Product = sequelize.define('product', {
     allowNull: false,
   },
   image: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     defaultValue: "https://agrimart.in/uploads/vendor_banner_image/default.jpg"
   }
 })

@@ -12,8 +12,7 @@ const Purchase = sequelize.define('purchase', {
     defaultValue: false
   }, 
   paymentDate: {
-    type: DataTypes.DATE,
-    allowNull: false,
+    type: DataTypes.DATE
   }
 })
 

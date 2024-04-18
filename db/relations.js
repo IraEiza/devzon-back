@@ -17,11 +17,11 @@ function addRelations() {
     //MANY TO MANY
     Purchase.belongsToMany(Product, {
       through: PurchaseProduct,
-      as: 'Products'
+      as: 'products'
     });
     Product.belongsToMany(Purchase, {
       through: PurchaseProduct,
-      as: 'Purchases'
+      as: 'purchase'
     });
   
     // Asegurando que onDelete CASCADE esté configurado en el modelo de unión
