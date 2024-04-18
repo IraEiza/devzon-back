@@ -14,7 +14,6 @@ const Purchase = sequelize.define('purchase', {
   paymentDate: {
     type: DataTypes.DATE,
     allowNull: false,
-    defaultValue: new Date()
   }
 })
 

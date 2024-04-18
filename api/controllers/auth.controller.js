@@ -50,7 +50,7 @@ const login = async (req, res) => {
       const userJSON = user.toJSON()
       delete userJSON.password
 
-      return res.status(200).json({ token, userJSON })  // === { token: token }
+      return res.status(200).json({ token, user: userJSON })  // === { token: token }
     } else {
       return res.status(404).send('Email or password wrong')
     }

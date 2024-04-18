@@ -43,12 +43,12 @@ const getOneProduct = async (req, res) => {
 // Create One Product
 const createProduct = async (req, res) => {
   try {
-    const { name, price, description, stock } = req.body;
+    const { name, price, description, image } = req.body;
     const newProduct = await Product.create({
       name,
       price,
       description,
-      stock
+      image
     });
     res.status(201).json(newProduct);
   } catch (error) {
@@ -60,7 +60,7 @@ const createProduct = async (req, res) => {
 const updateProduct = async (req, res) => {
   try {
     const { productId } = req.params;
-    const { name, price, description } = req.body;
+    const { name, price, description, image } = req.body;
 
     const product = await Product.findByPk(productId);
 
@@ -71,6 +71,7 @@ const updateProduct = async (req, res) => {
     product.name = name || product.name;
     product.price = price || product.price;
     product.description = description || product.description;
+    product.image = image || product.image;
 
     await product.save();
 
